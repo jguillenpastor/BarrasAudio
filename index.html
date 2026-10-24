@@ -692,8 +692,8 @@ function recHTML() {
       <label class="check"><input type="checkbox" id="loop" ${p.loop !== false ? 'checked' : ''}> En bucle</label>
     </div>
     <div><label for="vol" class="label">Volumen de la base</label><input type="range" id="vol" min="0" max="1" step="0.01" value="${p.volume ?? 0.9}"></div>
-    <label class="linkbtn">Cambiar base<input type="file" accept="audio/*" id="beatfile" class="vh"></label>`
-  : `<label class="importbeat"><span class="ib-t">Importar base</span><span class="ib-s">MP3 o M4A desde Archivos</span><input type="file" accept="audio/*" id="beatfile" class="vh"></label>
+    <label class="linkbtn">Cambiar base<input type="file" id="beatfile" class="vh"></label>`
+  : `<label class="importbeat"><span class="ib-t">Importar base</span><span class="ib-s">MP3 o M4A desde Archivos</span><input type="file" id="beatfile" class="vh"></label>
      <p class="hint" style="margin:0">También puedes grabar sin base.</p>`;
   return `
   <section class="panel">${beat}</section>
